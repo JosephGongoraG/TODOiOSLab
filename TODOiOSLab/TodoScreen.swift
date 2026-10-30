@@ -7,7 +7,7 @@ struct TodoScreen: View {
     @State private var newTodoText = ""
 
     private var remainingCount: Int {
-        todos.filter{!0.isDone}.count
+        todos.filter { !$0.isDone }.count
     }
 
     var body: some View {
